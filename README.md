@@ -21,7 +21,7 @@ Visualize the reward during adversarial training.
 tensorboard --logdir output/summary/
 ```
 
-## Results
+## Initial Results
 
 ##### Pendulum-v0
 | ![](https://github.com/krosac/imitation/blob/master/images/pendulum_a2c.PNG) | ![](https://github.com/krosac/imitation/blob/master/images/pendulum_airl.PNG)|
