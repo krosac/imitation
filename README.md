@@ -9,7 +9,7 @@ So I manually evaluate the reward from generator samples at [imitation/src/imita
 ```
 cd imitation
 ```
-Update the code of python package if you modify ``imitation/src/*``. 
+Update the code of python package if you customize ``imitation/src/*``. 
 ```
 pip install -e .
 ```
