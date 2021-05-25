@@ -3,7 +3,7 @@ forked from [https://github.com/HumanCompatibleAI/imitation](https://github.com/
 
 Rewards in the course of adversarial training are not explicitly tracked in [AdversarialTrainer](https://github.com/krosac/imitation/blob/master/imitation/src/imitation/algorithms/adversarial.py).
 So I manually evaluate the reward from generator samples at [imitation/src/imitation/algorithms/adversarial.py#L251](https://github.com/krosac/imitation/blob/master/imitation/src/imitation/algorithms/adversarial.py#L251). 
-**The reward evaluation needs to be further checked.**
+**The reward evaluation needs to be further checked!**
 
 ## Run
 ```
