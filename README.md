@@ -25,7 +25,8 @@ tensorboard --logdir output/summary/
 
 ##### Pendulum-v0
 ![](https://github.com/krosac/imitation/blob/master/images/pendulum_a2c.PNG)
-**Expert(A2C)**
+*Expert(A2C)*
+
 ![](https://github.com/krosac/imitation/blob/master/images/pendulum_airl.PNG)
 **AIRL**
 
