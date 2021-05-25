@@ -8,7 +8,13 @@ So I manually evaluate the reward from generator samples at [imitation/src/imita
 ## Run
 ```
 cd imitation
+```
+Update the code of python package if you modify ``imitation/src/*``. 
+```
 pip install -e .
+```
+Run the quickstart script.
+```
 python3 examples/quickstart_airl.py --env Pendulum-v0 --expert A2C --policy MlpPolicy --expert_timestamps 3e6 --il_algo airl --il_rounds 2000 -v
 ```
 The expert will be trained first, followed by the adversarial training with expert trajectories.
