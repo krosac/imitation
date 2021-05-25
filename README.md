@@ -24,6 +24,6 @@ tensorboard --logdir output/summary/
 ## Results
 
 ##### Pendulum-v0
-
+![Expert(A2C)](https://github.com/krosac/imitation/blob/master/images/pendulum_a2c.PNG)
 
 ##### Mountaincar-v0
