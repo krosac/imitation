@@ -216,7 +216,7 @@ class AdversarialTrainer:
         """
         with logger.accumulate_means("disc"):
             # optionally write TB summaries for collected ops
-            write_summaries = self._init_tensorboard and self._global_step % 20 == 0
+            write_summaries = self._init_tensorboard and self._global_step % 1 == 0
 
             # compute loss
             batch = self._make_disc_train_batch(
@@ -247,7 +247,19 @@ class AdversarialTrainer:
                 logger.record(k, v)
             logger.dump(self._disc_step)
             if write_summaries:
-                self._summary_writer.add_histogram("disc_logits", disc_logits.detach())
+                #self._summary_writer.add_histogram("disc_logits", disc_logits.detach())
+                rew = np.array([x['wrapped_env_rew'] for x in batch['infos']])
+                rews = []
+                rm = 0
+                for ii in range(batch['gen_dones'].size):
+                    rm += rew[ii]
+                    done = batch['gen_dones'][ii]
+                    if done == True:
+                        rews.append(rm)
+                        rm = 0
+                if len(rews) > 0:
+                    rew_episodes_mean = np.array(rews).mean()
+                    self._summary_writer.add_scalar('episode reward', rew_episodes_mean, self._disc_step)
 
         return train_stats
 
@@ -422,6 +434,8 @@ class AdversarialTrainer:
             "done": self._torchify_array(dones),
             "labels_gen_is_one": self._torchify_array(labels_gen_is_one),
             "log_policy_act_prob": self._torchify_array(log_act_prob),
+            "infos": gen_samples['infos'],
+            "gen_dones": gen_samples["dones"]
         }
 
         return batch_dict
