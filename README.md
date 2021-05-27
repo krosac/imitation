@@ -32,11 +32,11 @@ tensorboard --logdir output/summary/
 ## Initial Results
 
 ##### Pendulum-v0
-|![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.PNG) | ![](https://github.com/krosac/imitation/blob/master/images/pendulum_airl_ppo.PNG)|
+|![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.PNG) | ![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo_airl.PNG)|
 |:--:| :--:|
 |*Expert(PPO('MlpPolicy', util.make_vec_env('Pendulum-v0', n_envs=8),<br> n_steps=2048,batch_size=32,gae_lambda=0.95,gamma=0.99,<br> n_epochs=10,ent_coef=0.0,learning_rate=3e-4,clip_range=0.2))* |*AIRL*|
 
-##### Mountaincar-v0
-|![](https://github.com/krosac/imitation/blob/master/images/mountaincar_a2c.PNG)|![](https://github.com/krosac/imitation/blob/master/images/mountaincar_airl.PNG)|
+##### CartPole-v1
+|![](https://github.com/krosac/imitation/blob/master/images/cartpole_ppo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/cartpole_airl_ppo.PNG)|
 |:--:|:--:|
-|*Expert(A2C)*|*AIRL*|
+|*Expert(PPO('MlpPolicy', util.make_vec_env('CartPole-v1', n_envs=8),<br> n_steps=32,gae_lambda=0.8,gamma=0.98,<br> n_epochs=20,ent_coef=0.0,learning_rate=1e-2,clip_range=0.2))*|*AIRL*|
