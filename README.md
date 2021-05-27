@@ -32,9 +32,9 @@ tensorboard --logdir output/summary/
 ## Initial Results
 
 ##### Pendulum-v0
-| ![](https://github.com/krosac/imitation/blob/master/images/pendulum_a2c.PNG) | ![](https://github.com/krosac/imitation/blob/master/images/pendulum_airl.PNG)|
+| ![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.svg) | ![]()|
 |:--:| :--:|
-|*Expert(A2C)* |*AIRL*|
+|*Expert(PPO)* |*AIRL*|
 
 ##### Mountaincar-v0
 |![](https://github.com/krosac/imitation/blob/master/images/mountaincar_a2c.PNG)|![](https://github.com/krosac/imitation/blob/master/images/mountaincar_airl.PNG)|
