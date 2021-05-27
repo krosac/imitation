@@ -32,9 +32,17 @@ tensorboard --logdir output/summary/
 ## Initial Results
 
 ##### Pendulum-v0
-|![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.png) | ![]()|
+|![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.PNG) | ![]()|
 |:--:| :--:|
-|*Expert(PPO)* |*AIRL*|
+|*Expert(PPO('MlpPolicy', util.make_vec_env('Pendulum-v0', n_envs=8),
+                    n_steps=2048,
+                    batch_size=32,
+                    gae_lambda=0.95,
+                    gamma=0.99,
+                    n_epochs=10,
+                    ent_coef=0.0,
+                    learning_rate=3e-4,
+                    clip_range=0.2))* |*AIRL*|
 
 ##### Mountaincar-v0
 |![](https://github.com/krosac/imitation/blob/master/images/mountaincar_a2c.PNG)|![](https://github.com/krosac/imitation/blob/master/images/mountaincar_airl.PNG)|
