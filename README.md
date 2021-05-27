@@ -32,7 +32,7 @@ tensorboard --logdir output/summary/
 ## Initial Results
 
 ##### Pendulum-v0
-| ![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.svg) | ![]()|
+| ![](https://github.com/krosac/imitation/blob/master/images/pendulum_ppo.svg | width=100) | ![]()|
 |:--:| :--:|
 |*Expert(PPO)* |*AIRL*|
 
