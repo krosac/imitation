@@ -35,7 +35,7 @@ tensorboard --logdir output/summary/
 |:--:| :--:|
 |*Expert(PPO('MlpPolicy', util.make_vec_env('Pendulum-v0', n_envs=8),<br> n_steps=2048,batch_size=32,gae_lambda=0.95,gamma=0.99,<br> n_epochs=10,ent_coef=0.0,learning_rate=3e-4,clip_range=0.2))* |*AIRL*|
 
-Bad performance for AIRL. Check (https://arxiv.org/pdf/1710.11248.pdf)[https://arxiv.org/pdf/1710.11248.pdf] Appendix D for experiment details. 
+Bad performance for AIRL. Check [https://arxiv.org/pdf/1710.11248.pdf](https://arxiv.org/pdf/1710.11248.pdf) Appendix D for experiment details. 
 AIRL needs an **extra function approximator for reward**, which is not covered by the quickstart example script.
 In the quickstart example, AIRL is applied with same hyperparameters as GAIL.
 
