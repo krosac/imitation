@@ -40,6 +40,6 @@ AIRL needs an **extra function approximator for reward**, which is not covered b
 In the quickstart example, AIRL is applied with same hyperparameters as GAIL.
 
 ##### CartPole-v1
-|![](https://github.com/krosac/imitation/blob/master/images/cartpole_ppo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/cartpole_gail_ppo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/cartpole_airl_ppo.PNG)|
+|![](https://github.com/krosac/imitation/blob/master/images/cartpole_ppo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/cartpole_gail_ppo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/cartpole_airl_ppo_new.PNG)|
 |:--:|:--:|:--:|
 |*Expert(PPO('MlpPolicy', util.make_vec_env('CartPole-v1', n_envs=8),<br> n_steps=32,gae_lambda=0.8,gamma=0.98,<br> n_epochs=20,ent_coef=0.0,learning_rate=1e-2,clip_range=0.2))*|*GAIL*|*AIRL*|
