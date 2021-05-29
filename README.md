@@ -1,4 +1,4 @@
-# 1: SB3-based Imitation Learning (reproduce GAIL, AIRL)
+# Trial 1: SB3-based Imitation Learning (reproduce GAIL, AIRL)
 forked from [https://github.com/HumanCompatibleAI/imitation](https://github.com/HumanCompatibleAI/imitation) (based on [Stable Baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html))
 
 Expert training hyperparameters: [https://github.com/araffin/rl-baselines-zoo/tree/master/hyperparams](https://github.com/araffin/rl-baselines-zoo/tree/master/hyperparams)
@@ -49,7 +49,7 @@ pip install mujoco-py==2.0.2.9 --no-cache-dir --no-binary :all: --no-build-isola
 ```
 
 
-# 2: Official AIRL
+# Trial 2: Official AIRL
 
 AIRL does not work with SB3-based [https://github.com/HumanCompatibleAI/imitation](https://github.com/HumanCompatibleAI/imitation) (GAIL works fine).
 So we switch to [https://github.com/justinjfu/inverse_rl](https://github.com/justinjfu/inverse_rl), which is provided by the AIRL paper author at [https://sites.google.com/view/adversarial-irl](https://sites.google.com/view/adversarial-irl).
