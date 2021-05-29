@@ -80,6 +80,6 @@ Average Return (episodic reward, culumutive)
 
 |![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_trpo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl_origin.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl.PNG)|
 |:--:|:--:|:--:|
-|*TRPO*|*IRL original*|*IRL generated*|
+|*TRPO*|*IRL original(5 trajs)*|*IRL generated*|
 
 
