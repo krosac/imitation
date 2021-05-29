@@ -49,3 +49,24 @@ pip install mujoco-py==2.0.2.9 --no-cache-dir --no-binary :all: --no-build-isola
 ```
 
 
+# AIRL
+
+AIRL does not work with SB3-based [https://github.com/HumanCompatibleAI/imitation](https://github.com/HumanCompatibleAI/imitation) (GAIL works fine).
+So we switch to [https://github.com/justinjfu/inverse_rl](https://github.com/justinjfu/inverse_rl), which is provided by the AIRL paper author.
+
+## Install 
+```
+git clone https://github.com/rll/rllab.git
+git clone https://github.com/justinjfu/inverse_rl.git
+```
+Fix a typo at [https://github.com/rll/rllab/blob/master/rllab/sampler/stateful_pool.py#L3](https://github.com/rll/rllab/blob/master/rllab/sampler/stateful_pool.py#L3) from ````from joblib.pool import MemmapingPool```` to ``from joblib.pool import MemmappingPool``.
+Update ``PYTHONPATH`` and install some unmentioned denpendencies.
+```
+export PYTHONPATH=/path/to/rllab:$PYTHONPATH
+pip install path pyprind cached-property
+export PYTHONPATH=/path/to/inverse_rl:$PYTHONPATH
+```
+Then we can follow [Pendulum Example](https://github.com/justinjfu/inverse_rl#examples).
+The result (trajectories and training stats) can be found under ``data/``.
+
+
