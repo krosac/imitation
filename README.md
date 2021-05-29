@@ -78,8 +78,8 @@ Average Return (episodic reward, culumutive)
 
 ##### Pendulum-v0 
 
-|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_trpo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl_origin.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl.PNG)|
-|:--:|:--:|:--:|
-|*TRPO*|*IRL original(5 trajs)*|*IRL generated*|
+|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_trpo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_gail_origin.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_gail.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl_origin.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl.PNG)|
+|:--:|:--:|:--:|:--:|:--:|
+|*TRPO*|*GAIL original(5 trajs)*|*GAIL generated*|*IRL original(5 trajs)*|*IRL generated*|
 
 
