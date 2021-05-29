@@ -66,6 +66,10 @@ export PYTHONPATH=/path/to/rllab:$PYTHONPATH
 pip install path pyprind cached-property
 export PYTHONPATH=/path/to/inverse_rl:$PYTHONPATH
 ```
+Downgrade openai gym version for compatability.
+```
+pip install gym==0.14
+```
 Then we can follow [Pendulum Example](https://github.com/justinjfu/inverse_rl#examples).
 The result (trajectories and training stats) can be found under ``data/``.
 
