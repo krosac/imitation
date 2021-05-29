@@ -82,4 +82,6 @@ Average Return (episodic reward, culumutive)
 |:--:|:--:|:--:|:--:|:--:|
 |*TRPO*|*GAIL original(5 trajs)*|*GAIL generated*|*IRL original(5 trajs)*|*IRL generated*|
 
+This is the only one easily working.
+Other environments cannot work (gym and mujoco version issues?).
 
