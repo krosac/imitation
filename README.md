@@ -77,5 +77,8 @@ The results (trajectories and training stats) can be found under ``data/``.
 
 ##### Pendulum-v0
 
+|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_trpo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl.PNG)|
+|:--:|:--:|
+|*TRPO*|*AIRL*|
 
 
