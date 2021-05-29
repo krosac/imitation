@@ -52,7 +52,7 @@ pip install mujoco-py==2.0.2.9 --no-cache-dir --no-binary :all: --no-build-isola
 # AIRL
 
 AIRL does not work with SB3-based [https://github.com/HumanCompatibleAI/imitation](https://github.com/HumanCompatibleAI/imitation) (GAIL works fine).
-So we switch to [https://github.com/justinjfu/inverse_rl](https://github.com/justinjfu/inverse_rl), which is provided by the AIRL paper author.
+So we switch to [https://github.com/justinjfu/inverse_rl](https://github.com/justinjfu/inverse_rl), which is provided by the AIRL paper author at [https://sites.google.com/view/adversarial-irl](https://sites.google.com/view/adversarial-irl).
 
 ## Install 
 ```
