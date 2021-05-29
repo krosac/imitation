@@ -66,11 +66,11 @@ export PYTHONPATH=/path/to/rllab:$PYTHONPATH
 pip install path pyprind cached-property
 export PYTHONPATH=/path/to/inverse_rl:$PYTHONPATH
 ```
-Downgrade openai gym version for compatability.
+Downgrade openai gym version for compatability. 
 ```
 pip install gym==0.14
 ```
-Then we can follow [Pendulum Example](https://github.com/justinjfu/inverse_rl#examples).
-The result (trajectories and training stats) can be found under ``data/``.
+[Pendulum Example](https://github.com/justinjfu/inverse_rl#examples) runs well with tf1.15.3 and python 3.7.5.
+The results (trajectories and training stats) can be found under ``data/``.
 
 
