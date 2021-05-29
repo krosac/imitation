@@ -73,4 +73,9 @@ pip install gym==0.14
 [Pendulum Example](https://github.com/justinjfu/inverse_rl#examples) runs well with tf1.15.3 and python 3.7.5.
 The results (trajectories and training stats) can be found under ``data/``.
 
+## Initial Results
+
+##### Pendulum-v0
+
+
 
