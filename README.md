@@ -74,7 +74,10 @@ pip install gym==0.14
 The results (trajectories and training stats) can be found under ``data/``.
 
 ## Initial Results
-Average Return (episodic reward, culumutive)
+Visualize average Return (episodic reward, culumutive) with
+```
+python3 gen_tensorboard_event.py --stats data/pendulum_irl/progress.csv --log_dir tensorboard/pendulum_irl
+```
 
 ##### Pendulum-v0 
 
