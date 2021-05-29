@@ -74,11 +74,12 @@ pip install gym==0.14
 The results (trajectories and training stats) can be found under ``data/``.
 
 ## Initial Results
+Average Return (episodic reward, culumutive)
 
-##### Pendulum-v0
+##### Pendulum-v0 
 
-|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_trpo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl.PNG)|
-|:--:|:--:|
-|*TRPO*|*AIRL*|
+|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_trpo.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl_origin.PNG)|![](https://github.com/krosac/imitation/blob/master/images/AIRL_pendulum_irl.PNG)|
+|:--:|:--:|:--:|
+|*TRPO*|*IRL original*|*IRL generated*|
 
 
