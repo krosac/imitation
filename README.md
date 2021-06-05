@@ -90,3 +90,5 @@ python3 gen_tensorboard_event.py --stats data/pendulum_irl/progress.csv --log_di
 This is the only one easily working.
 Other environments cannot work (gym and mujoco version issues?).
 
+Open reviews: [https://openreview.net/forum?id=rkHywl-A-&noteId=B1c_e2Fzf](https://openreview.net/forum?id=rkHywl-A-&noteId=B1c_e2Fzf)
+
